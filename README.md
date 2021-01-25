@@ -23,7 +23,7 @@
    ````
 ## Usage
 Check Postman documentation ````documentation/postman````.
-
+Create user````bin/console app:user:add userName```` 
 Run symfony server ```symfony server:start``` 
 ## TODO
 - [ ] Improve exceptions handling
