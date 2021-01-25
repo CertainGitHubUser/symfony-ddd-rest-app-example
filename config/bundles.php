@@ -12,4 +12,10 @@ return [
     Symfony\Bundle\MonologBundle\MonologBundle::class => ['all' => true],
     Symfony\Bundle\DebugBundle\DebugBundle::class => ['dev' => true, 'test' => true],
     Symfony\Bundle\MakerBundle\MakerBundle::class => ['dev' => true],
+    SymfonyBundles\JsonRequestBundle\JsonRequestBundle::class => ['all' => true],
+
+    // SDRAE modules
+    App\Module\Product\SdraeProductBundle::class => ['all' => true],
+    App\Module\User\SdraeUserBundle::class => ['all' => true],
+    App\Module\Cart\SdraeCartBundle::class => ['all' => true]
 ];

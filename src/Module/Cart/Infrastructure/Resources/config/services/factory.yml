@@ -1,0 +1,23 @@
+services:
+
+  _defaults:
+    autowire: true
+    public: true
+
+  App\Module\Cart\Domain\Model\Cart\CartFactoryInterface:
+    class: App\Module\Cart\Infrastructure\Factory\CartFactory
+
+  App\Module\Cart\Domain\Model\CartDetails\CartDetailsFactoryInterface:
+    class: App\Module\Cart\Infrastructure\Factory\CartDetailsFactory
+
+  App\Module\Cart\Domain\Model\CartUnit\CartUnitFactoryInterface:
+    class: App\Module\Cart\Infrastructure\Factory\CartUnitFactory
+
+  App\Module\Cart\Domain\Model\CartUnit\CartUnitsCollectionFactoryInterface:
+    class: App\Module\Cart\Infrastructure\Factory\CartUnitsCollectionFactory
+
+  App\Module\Cart\Domain\Model\CartUnitWithProduct\CartUnitsWithProductCollectionFactoryInterface:
+    class: App\Module\Cart\Infrastructure\Factory\CartUnitsWithProductCollectionFactory
+
+  App\Module\Cart\Domain\Model\CartUnitWithProduct\CartUnitWithProductFactoryInterface:
+    class: App\Module\Cart\Infrastructure\Factory\CartUnitWithProductFactory

@@ -1,0 +1,9 @@
+services:
+
+  _defaults:
+    autowire: true
+    public: true
+    autoconfigure: true
+
+  App\Module\User\Domain\Model\UserRepositoryInterface:
+    class: App\Module\User\Infrastructure\Repository\DoctrineUserRepository

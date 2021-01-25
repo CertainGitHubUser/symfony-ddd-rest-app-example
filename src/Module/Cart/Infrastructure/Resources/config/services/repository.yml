@@ -1,0 +1,12 @@
+services:
+
+  _defaults:
+    autowire: true
+    public: true
+    autoconfigure: true
+
+  App\Module\Cart\Domain\Model\Cart\CartRepositoryInterface:
+    class: App\Module\Cart\Infrastructure\Repository\DoctrineCartRepository
+
+  App\Module\Cart\Infrastructure\Repository\DoctrineCartUnitRepository:
+    class: App\Module\Cart\Infrastructure\Repository\DoctrineCartUnitRepository

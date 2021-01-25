@@ -1,0 +1,8 @@
+services:
+
+  _defaults:
+    autowire: true
+    public: true
+    autoconfigure: true
+
+  App\Module\Cart\Application\Controller\CartController: ~

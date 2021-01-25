@@ -1,0 +1,11 @@
+services:
+
+  _defaults:
+    autowire: true
+    public: true
+
+  sdrae.user.use_case.add_user:
+    class: App\Module\User\Application\UseCase\AddUser\AddUser
+
+  sdrae.user.use_case.get_user:
+    class: App\Module\User\Application\UseCase\GetUser\GetUser

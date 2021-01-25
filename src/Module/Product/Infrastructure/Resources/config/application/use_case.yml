@@ -1,0 +1,23 @@
+services:
+
+  _defaults:
+    autowire: true
+    public: true
+
+  sdrae.product.use_case.add_product:
+    class: App\Module\Product\Application\UseCase\AddProduct\AddProduct
+
+  sdrae.product.use_case.update_product:
+    class: App\Module\Product\Application\UseCase\UpdateProduct\UpdateProduct
+
+  sdrae.product.use_case.get_products_paginated_collection:
+    class: App\Module\Product\Application\UseCase\GetProductsPaginatedCollection\GetProductsPaginatedCollection
+
+  sdrae.product.use_case.get_products_collection:
+    class: App\Module\Product\Application\UseCase\GetProducts\GetProducts
+
+  sdrae.product.use_case.get_product:
+    class: App\Module\Product\Application\UseCase\GetProduct\GetProduct
+
+  sdrae.product.use_case.delete_product:
+    class: App\Module\Product\Application\UseCase\DeleteProduct\DeleteProduct

@@ -1,3 +1,5 @@
 framework:
     router:
         strict_requirements: null
+    secret: S0ME_SECRET
+    profiler: { only_exceptions: false }

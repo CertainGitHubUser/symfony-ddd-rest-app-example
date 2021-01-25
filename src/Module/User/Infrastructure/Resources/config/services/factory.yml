@@ -1,0 +1,11 @@
+services:
+
+  _defaults:
+    autowire: true
+    public: true
+
+  App\Module\User\Domain\Model\UserFactoryInterface:
+    class: App\Module\User\Infrastructure\Factory\UserFactory
+
+  App\Module\User\Domain\Model\UsersPaginatedCollectionFactoryInterface:
+    class: App\Module\User\Infrastructure\Factory\UsersPaginatedCollectionFactory

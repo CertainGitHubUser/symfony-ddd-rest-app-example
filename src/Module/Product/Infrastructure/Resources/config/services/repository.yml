@@ -1,0 +1,9 @@
+services:
+
+  _defaults:
+    autowire: true
+    public: true
+    autoconfigure: true
+
+  App\Module\Product\Domain\Model\ProductRepositoryInterface:
+    class: App\Module\Product\Infrastructure\Repository\DoctrineProductRepository

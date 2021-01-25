@@ -1,0 +1,20 @@
+services:
+
+  _defaults:
+    autowire: true
+    public: true
+
+  sdrae.cart.use_case.add_cart:
+    class: App\Module\Cart\Application\UseCase\Cart\AddCart\AddCart
+
+  sdrae.cart.use_case.get_cart_details:
+    class: App\Module\Cart\Application\UseCase\Cart\GetCartDetails\GetCartDetails
+
+  sdrae.cart_unit.use_case.add_cart_unit:
+    class: App\Module\Cart\Application\UseCase\CartUnit\AddCartUnit\AddCartUnit
+
+  sdrae.cart_unit.use_case.delete_cart_unit:
+    class: App\Module\Cart\Application\UseCase\CartUnit\DeleteCartUnit\DeleteCartUnit
+
+  sdrae.cart_unit.use_case.carts_has_product:
+    class: App\Module\Cart\Application\UseCase\CartUnit\CartsHasProduct\CartsHasProduct

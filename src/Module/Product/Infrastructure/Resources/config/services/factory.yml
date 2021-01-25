@@ -1,0 +1,14 @@
+services:
+
+  _defaults:
+    autowire: true
+    public: true
+
+  App\Module\Product\Domain\Model\ProductFactoryInterface:
+    class: App\Module\Product\Infrastructure\Factory\ProductFactory
+
+  App\Module\Product\Domain\Model\ProductsPaginatedCollectionFactoryInterface:
+    class: App\Module\Product\Infrastructure\Factory\ProductsPaginatedCollectionFactory
+
+  App\Module\Product\Domain\Model\ProductsCollectionFactoryInterface:
+    class: App\Module\Product\Infrastructure\Factory\ProductsCollectionFactory
