@@ -1,0 +1,685 @@
+{
+	"info": {
+		"_postman_id": "6c940e09-f5f4-4064-b816-5d537866ac47",
+		"name": "symfony-ddd-rest-app-example",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "Add product",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"price\":112.21,\n    \"title\":\"test\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/products",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"products"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add product ",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"price\":112.21,\n    \"title\":\"test\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/products",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"products"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "max-age=0, must-revalidate, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 25 Jan 2021 22:52:07 GMT"
+								},
+								{
+									"key": "Expires",
+									"value": "Mon, 25 Jan 2021 22:52:07 GMT"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "sf_redirect=%7B%22token%22%3A%22c05e95%22%2C%22route%22%3A%22add_product%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CModule%5C%5CProduct%5C%5CApplication%5C%5CController%5C%5CProductController%22%2C%22method%22%3A%22addProduct%22%2C%22file%22%3A%22%5C%2Fhome%5C%2Fmax%5C%2FDesktop%5C%2Fgog.com%5C%2Fsymfony-ddd-rest-app-example%5C%2Fsrc%5C%2FModule%5C%2FProduct%5C%2FApplication%5C%2FController%5C%2FProductController.php%22%2C%22line%22%3A21%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D; path=/; httponly; samesite=lax"
+								},
+								{
+									"key": "X-Debug-Token",
+									"value": "c05e95"
+								},
+								{
+									"key": "X-Debug-Token-Link",
+									"value": "http://127.0.0.1:8000/_profiler/c05e95"
+								},
+								{
+									"key": "X-Robots-Tag",
+									"value": "noindex"
+								},
+								{
+									"key": "Content-Length",
+									"value": "57"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 9,\n    \"title\": \"test\",\n    \"price\": \"112.21\",\n    \"currency\": \"USD\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get products",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"offset\":0,\n    \"limit\": 3\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/products/list",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"products",
+								"list"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get products",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"offset\":0,\n    \"limit\": 3\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/products/list",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"products",
+										"list"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "max-age=0, must-revalidate, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 25 Jan 2021 22:52:23 GMT"
+								},
+								{
+									"key": "Expires",
+									"value": "Mon, 25 Jan 2021 22:52:23 GMT"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "sf_redirect=deleted; expires=Sun, 26-Jan-2020 22:52:22 GMT; Max-Age=0; path=/; httponly"
+								},
+								{
+									"key": "X-Debug-Token",
+									"value": "0a85bf"
+								},
+								{
+									"key": "X-Debug-Token-Link",
+									"value": "http://127.0.0.1:8000/_profiler/0a85bf"
+								},
+								{
+									"key": "X-Robots-Tag",
+									"value": "noindex"
+								},
+								{
+									"key": "Content-Length",
+									"value": "234"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id\": 3,\n            \"title\": \"test1\",\n            \"price\": \"12.12\",\n            \"currency\": \"USD\"\n        },\n        {\n            \"id\": 4,\n            \"title\": \"test1423\",\n            \"price\": \"1.00\",\n            \"currency\": \"USD\"\n        },\n        {\n            \"id\": 5,\n            \"title\": \"test123\",\n            \"price\": \"12.00\",\n            \"currency\": \"USD\"\n        }\n    ],\n    \"pagination\": {\n        \"limit\": 3,\n        \"offset\": 0,\n        \"total\": 7\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update product",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"price\":12.12,\n    \"title\":\"test1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/products/{product_id}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"products",
+								"{product_id}"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update product",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"price\":12.12,\n    \"title\":\"test1\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/products/3",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"products",
+										"3"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "max-age=0, must-revalidate, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 25 Jan 2021 22:52:46 GMT"
+								},
+								{
+									"key": "Expires",
+									"value": "Mon, 25 Jan 2021 22:52:46 GMT"
+								},
+								{
+									"key": "X-Debug-Token",
+									"value": "607bed"
+								},
+								{
+									"key": "X-Debug-Token-Link",
+									"value": "http://127.0.0.1:8000/_profiler/607bed"
+								},
+								{
+									"key": "X-Robots-Tag",
+									"value": "noindex"
+								},
+								{
+									"key": "Content-Length",
+									"value": "57"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 3,\n    \"title\": \"test1\",\n    \"price\": \"12.12\",\n    \"currency\": \"USD\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/products/{product_id}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"products",
+								"{product_id}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete product",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/products/223",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"products",
+										"223"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "max-age=0, must-revalidate, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 25 Jan 2021 19:45:13 GMT"
+								},
+								{
+									"key": "Expires",
+									"value": "Mon, 25 Jan 2021 19:45:13 GMT"
+								},
+								{
+									"key": "X-Debug-Token",
+									"value": "09ea25"
+								},
+								{
+									"key": "X-Debug-Token-Link",
+									"value": "http://127.0.0.1:8000/_profiler/09ea25"
+								},
+								{
+									"key": "X-Robots-Tag",
+									"value": "noindex"
+								},
+								{
+									"key": "Content-Length",
+									"value": "55"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 7,\n    \"message\": \"no product by id '223'\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Cart",
+			"item": [
+				{
+					"name": "Add cart",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userId\":1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/cart",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"cart"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add cart",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"userId\":1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/cart",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"cart"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "max-age=0, must-revalidate, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 25 Jan 2021 19:03:01 GMT"
+								},
+								{
+									"key": "Expires",
+									"value": "Mon, 25 Jan 2021 19:03:01 GMT"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "sf_redirect=deleted; expires=Sun, 26-Jan-2020 19:03:00 GMT; Max-Age=0; path=/; httponly"
+								},
+								{
+									"key": "X-Debug-Token",
+									"value": "f5c450"
+								},
+								{
+									"key": "X-Debug-Token-Link",
+									"value": "http://127.0.0.1:8000/_profiler/f5c450"
+								},
+								{
+									"key": "X-Robots-Tag",
+									"value": "noindex"
+								},
+								{
+									"key": "Content-Length",
+									"value": "57"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 19,\n    \"message\": \"User with id: 1 already has cart.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Add one item to cart unit",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/cart/{cart_id}/unit/{product_id}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"cart",
+								"{cart_id}",
+								"unit",
+								"{product_id}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add cart unit",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/cart/1/unit/3",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"cart",
+										"1",
+										"unit",
+										"3"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "max-age=0, must-revalidate, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 25 Jan 2021 22:55:54 GMT"
+								},
+								{
+									"key": "Expires",
+									"value": "Mon, 25 Jan 2021 22:55:54 GMT"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "sf_redirect=%7B%22token%22%3A%221fbbe9%22%2C%22route%22%3A%22add_cart_unit%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CModule%5C%5CCart%5C%5CApplication%5C%5CController%5C%5CCartController%22%2C%22method%22%3A%22addCartUnit%22%2C%22file%22%3A%22%5C%2Fhome%5C%2Fmax%5C%2FDesktop%5C%2Fgog.com%5C%2Fsymfony-ddd-rest-app-example%5C%2Fsrc%5C%2FModule%5C%2FCart%5C%2FApplication%5C%2FController%5C%2FCartController.php%22%2C%22line%22%3A47%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D; path=/; httponly; samesite=lax"
+								},
+								{
+									"key": "X-Debug-Token",
+									"value": "1fbbe9"
+								},
+								{
+									"key": "X-Debug-Token-Link",
+									"value": "http://127.0.0.1:8000/_profiler/1fbbe9"
+								},
+								{
+									"key": "X-Robots-Tag",
+									"value": "noindex"
+								},
+								{
+									"key": "Content-Length",
+									"value": "80"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 6,\n    \"cartId\": 1,\n    \"productId\": 3,\n    \"itemsAmount\": 2,\n    \"totalPrice\": 24,\n    \"itemPrice\": 12\n}"
+						}
+					]
+				},
+				{
+					"name": "Get cart details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/cart/{cart_id}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"cart",
+								"{cart_id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete cart unit",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/cart/{cart_id}/unit/{product_id}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"cart",
+								"{cart_id}",
+								"unit",
+								"{product_id}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
