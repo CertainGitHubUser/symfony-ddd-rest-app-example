@@ -25,5 +25,6 @@
 Check Postman documentation ````documentation/postman````.
 Create user````bin/console app:user:add userName```` 
 Run symfony server ```symfony server:start``` 
+You can check test examples in this commit https://github.com/CertainGitHubUser/symfony-ddd-rest-app-example/commit/61245f5b65f9b97126a2060e4526648e9f0185f8
 ## TODO
 - [ ] Improve exceptions handling
